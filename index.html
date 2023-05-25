@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap">
+</head>
+<body>
+    <header>
+        <h2>People App</h1>
+        <div class="filter">
+            <form action="" id="filter-list">
+                <input type="search" placeholder="Name..." id="namesearch" name="name">
+                <select name="department" id="dep" name="department">
+                    <option value="" selected>Department</option>
+                    <option value="1">IT</option>
+                    <option value="2">Marketing</option>
+                </select>
+                <div><button type="button" id="search">Search</button></div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+            <div class="header-line">
+                <div class="div">Name</div>
+                <div class="div">Department</div>
+                <div class="div">Actions</div>
+            </div>
+            <div class="list"></div>
+        <div class="add">
+            <button type="button" id="new-person-btn">Add person</button>
+        </div>
+        <div class="popup">
+            <div class="popup-wrapper">
+                <form action="" id="popup">
+                    <legend id="popup-legend">...</legend>
+                    <input type="text" id="popup-name" name="popup-name" placeholder="Name" required>
+                    <select id="popup-department" name="popup-department" required>
+                        <option value="" hidden>Department</option>
+                        <option value="1">IT</option>
+                        <option value="2">Marketing</option>
+                    </select>
+                    <button type="button" id="popup-save">Save</button>
+                </form>
+                <div class="close">
+                    <button class="close-btn"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+
+</body>
+</html>
